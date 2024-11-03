@@ -1,21 +1,5 @@
 'use strict';
 
-// problems
-// - set a secret number between 1-20.
-// - Compare input value with the secret number on check button click.
-// - Show a status dpending on the gap between two numbers.
-// - Count the score and set highscore.
-// - On correct guess make the body color green.
-// - Reset the game on Again button click.
-
-// solution
-// - scrap the values and tags from html;
-// - set a secret number between 1-20.
-// - create a function to compare the secret value and input value;
-// - also update score and highscore in the function;
-// - return score , highscore , status ,
-// - reset function for reseting the all the values and fields.
-
 const inputValue = document.querySelector('.guess');
 const score = document.querySelector('.score');
 const highScore = document.querySelector('.highscore');
