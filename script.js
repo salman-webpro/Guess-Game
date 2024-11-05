@@ -51,7 +51,6 @@ checkButton.addEventListener('click', () => {
       ButtonInputDisable(true);
       document.body.style.backgroundColor = '#ff5d5d';
     }
-    // currentScore !== 0 ? currentScore-- : currentScore;
   }
 });
 
