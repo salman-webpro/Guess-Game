@@ -64,14 +64,3 @@ resetButton.addEventListener('click', () => {
   document.body.style.backgroundColor = 'black';
   secretNumber.innerHTML = '?';
 });
-
-// resetButton.addEventListener('click', () => {
-//   currentScore = 20;
-//   score.textContent = currentScore;
-//   currentStatus('Start Guessing Again');
-//   mySecretNumber = Math.trunc(Math.random() * 20) + 2;
-//   inputValue.value = '';
-//   ButtonInputDisable(false);
-//   document.body.style.backgroundColor = 'black';
-//   secretNumber.innerHTML = '?';
-// });
