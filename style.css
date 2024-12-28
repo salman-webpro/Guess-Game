@@ -69,7 +69,7 @@ h1 {
   transform: translate(-50%, 50%);
 }
 
-.between {
+/* .between {
   font-size: 1.4rem;
   position: absolute;
   top: 2rem;
@@ -93,7 +93,7 @@ h1 {
   text-align: center;
   display: block;
   margin-bottom: 3rem;
-}
+} */
 
 .btn {
   border: none;
