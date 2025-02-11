@@ -20,39 +20,39 @@ const ButtonInputDisable = function (which) {
   inputValue.disabled = which;
 };
 
-checkButton.addEventListener('click', () => {
-  const compareValue = Number(inputValue.value);
+// checkButton.addEventListener('click', () => {
+//   const compareValue = Number(inputValue.value);
 
-  if (!compareValue) {
-    currentStatus('Input a number first 🤷‍♂️');
-  } else if (compareValue === mySecretNumber) {
-    if (currentScore > currentHighScore) {
-      currentHighScore = currentScore;
-      highScore.innerHTML = currentHighScore;
-    }
-    currentStatus('Success 😍😍');
-    secretNumber.innerHTML = mySecretNumber;
-    document.body.style.backgroundColor = 'Green';
-    ButtonInputDisable(true);
-  } else if (compareValue !== mySecretNumber) {
-    if (currentScore > 1) {
-      currentScore--;
-      score.innerHTML = currentScore;
-      if (compareValue >= mySecretNumber + 5) {
-        currentStatus('📈 Too High');
-      } else if (compareValue <= mySecretNumber - 5) {
-        currentStatus('📉 Too Low');
-      } else {
-        currentStatus('✌️ Too close');
-      }
-    } else {
-      currentStatus('You lost the game 😭');
-      score.textContent = 0;
-      ButtonInputDisable(true);
-      document.body.style.backgroundColor = '#ff5d5d';
-    }
-  }
-});
+//   if (!compareValue) {
+//     currentStatus('Input a number first 🤷‍♂️');
+//   } else if (compareValue === mySecretNumber) {
+//     if (currentScore > currentHighScore) {
+//       currentHighScore = currentScore;
+//       highScore.innerHTML = currentHighScore;
+//     }
+//     currentStatus('Success 😍😍');
+//     secretNumber.innerHTML = mySecretNumber;
+//     document.body.style.backgroundColor = 'Green';
+//     ButtonInputDisable(true);
+//   } else if (compareValue !== mySecretNumber) {
+//     if (currentScore > 1) {
+//       currentScore--;
+//       score.innerHTML = currentScore;
+//       if (compareValue >= mySecretNumber + 5) {
+//         currentStatus('📈 Too High');
+//       } else if (compareValue <= mySecretNumber - 5) {
+//         currentStatus('📉 Too Low');
+//       } else {
+//         currentStatus('✌️ Too close');
+//       }
+//     } else {
+//       currentStatus('You lost the game 😭');
+//       score.textContent = 0;
+//       ButtonInputDisable(true);
+//       document.body.style.backgroundColor = '#ff5d5d';
+//     }
+//   }
+// });
 
 resetButton.addEventListener('click', () => {
   currentScore = 20;
